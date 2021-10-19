@@ -30,8 +30,21 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(employeeRecords) {
+  let nonPrivateEmployeeRecords={};
+  let nonPrivateEmployeeRecordsArray=[];
+ 
+  for (const employeeData of Object.keys(employeeRecords)) {
+    const {name , occupation , email } = new Object(employeeRecords[employeeData]);
+    
+     nonPrivateEmployeeRecords["name"] = name;     //destructing object in variables
+     nonPrivateEmployeeRecords["occupation"] = occupation;
+     nonPrivateEmployeeRecords["email"] = email;
+     nonPrivateEmployeeRecordsArray.push({name,occupation,email});
+  }
+  
+  return nonPrivateEmployeeRecordsArray;
+ 
 }
 
 // ! Test functions (plain vanilla JavaScript)

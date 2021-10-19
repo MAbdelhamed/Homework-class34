@@ -23,8 +23,27 @@ you have more than 3 items in your shopping cart the first item gets taken out.
 const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
-function addToShoppingCart(/* parameters go here */) {
-  // TODO complete this function
+function addToShoppingCart(groceryItem) {
+  let shoppingCartItems="";
+
+  if(typeof(groceryItem)!=='undefined'){    //check to avoid bug when we do not send parameter to the function
+    if(shoppingCart.length>=3)      //checking array length if it is more than or equal 3
+    {
+      shoppingCart.shift();       // remove first element of array
+      shoppingCart.push(groceryItem);    // add element to the end of array
+      shoppingCartItems=shoppingCart.join(', ');   //put ', ' separator between array elements
+    }
+    else{
+      shoppingCart.push(groceryItem);
+      shoppingCartItems=shoppingCart.join(', ');   
+      
+    }
+    return`You bought ${shoppingCartItems}!`;
+  }
+  else{
+    shoppingCartItems=shoppingCart.join(', ');
+    return `You bought ${shoppingCartItems}!`;
+  }
 }
 
 // ! Test functions (plain vanilla JavaScript)
@@ -40,6 +59,7 @@ function test1() {
 function test2() {
   console.log('Test 2: addShoppingCart() should take one parameter');
   const expected = 1;
+  
   const actual = addToShoppingCart.length;
   console.assert(actual === expected);
 }

@@ -30,30 +30,29 @@ Note: The DRY principle is put into practice here: instead of repeating the code
 randomly select array elements four times inside the `tellFortune` function 
 body, this code is now written once only in a separated function.
 -----------------------------------------------------------------------------*/
-const numKids = [
-  // TODO add elements here
-];
+const numKids = [3,2,6,1,5];
 
-const partnerNames = [
-  // TODO add elements here
-];
+const partnerNames = ["Chris","Anglica","Sherly","Merry","Max"];
 
-const locations = [
-  // TODO add elements here
-];
+const locations = ["Winterswijk","Arnhem","Amsterdam","Utrecht","Ermelo"];
 
-const jobTitles = [
-  // TODO add elements here
-];
+const jobTitles = ["Software Engineer","Accountant","IT Administrator","SEO Specialist"];
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function selectRandomly(fortuneArr) {
+  let fortuneValue=fortuneArr[Math.floor(Math.random()*fortuneArr.length)];   // get the integer of random number between 0 and array length 
+  return fortuneValue;
 }
 
-function tellFortune(/* add parameter(s) here */) {
-  // TODO complete this function
+function tellFortune(fortuneNumKids,fortunePartnerNames,fortuneLocations,fortuneJobTitles) {
+  let NumKids=selectRandomly(fortuneNumKids);
+  let partnerName=selectRandomly(fortunePartnerNames);
+  let location=selectRandomly(fortuneLocations);
+  let jobTitle=selectRandomly(fortuneJobTitles);
+
+  return `You will be a ${jobTitle} in ${location}, 
+  married to ${partnerName} with ${NumKids} kids.`;
 }
 
 console.log(tellFortune(numKids, partnerNames, locations, jobTitles));

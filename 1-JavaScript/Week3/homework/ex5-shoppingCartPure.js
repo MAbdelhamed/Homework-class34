@@ -15,10 +15,25 @@ it pure. Do the following:
    spread syntax.
 5. Confirm that you function passes the provided unit tests.
 ------------------------------------------------------------------------------*/
+
 // ! Function under test
-function addToShoppingCart(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
+function addToShoppingCart(ShopingCardList,groceryItem) {
+  
+  let newShopingCardList = [...ShopingCardList];   // adding the whole array elements by spread operator
+
+    if(newShopingCardList.length>=3)
+    {
+      newShopingCardList.shift();
+      newShopingCardList.push(groceryItem);
+      
+    }
+    else{
+      newShopingCardList.push(groceryItem);
+      
+    }
+    return newShopingCardList;
+  }
+
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
