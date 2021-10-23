@@ -31,7 +31,7 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(employeeRecords) {
-  let nonPrivateEmployeeRecords=[];
+  const nonPrivateEmployeeRecords=[];
  
   for (const employeeData of Object.keys(employeeRecords)) {
     const {name , occupation , email } = new Object(employeeRecords[employeeData]);

@@ -1,0 +1,3 @@
+*** Unit Test Error Report ***
+
+- tellFortune should tell the fortune by randomly selecting array values

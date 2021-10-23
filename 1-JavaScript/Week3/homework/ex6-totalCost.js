@@ -29,10 +29,12 @@ const cartForParty = {
 
 };
 
-function calculateTotalPrice(shopingCartForParty) {
+function calculateTotalPrice(shoppingCartForParty) {
   let totalPrice=0;
-  for (const groceryItem in shopingCartForParty) {
-    totalPrice+=parseFloat(shopingCartForParty[groceryItem]);
+  
+
+  for (const groceryItem of shoppingCartForParty) {
+    totalPrice+=parseFloat(shoppingCartForParty[groceryItem]);
   }
   console.log(totalPrice);
   return `Total: € ${totalPrice}`;
@@ -40,7 +42,7 @@ function calculateTotalPrice(shopingCartForParty) {
 
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  // TODO replace this comment with your code
+
   
   const expected = 1;
   const actual = calculateTotalPrice.length;

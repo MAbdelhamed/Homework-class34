@@ -32,7 +32,7 @@ body, this code is now written once only in a separated function.
 -----------------------------------------------------------------------------*/
 const numKids = [3,2,6,1,5];
 
-const partnerNames = ["Chris","Anglica","Sherly","Merry","Max"];
+const partnerNames = ["Chris","Angelica","Sheerly","Merry","Max"];
 
 const locations = ["Winterswijk","Arnhem","Amsterdam","Utrecht","Ermelo"];
 
@@ -41,18 +41,18 @@ const jobTitles = ["Software Engineer","Accountant","IT Administrator","SEO Spec
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
 function selectRandomly(fortuneArr) {
-  let fortuneValue=fortuneArr[Math.floor(Math.random()*fortuneArr.length)];   // get the integer of random number between 0 and array length 
+  const fortuneValue=fortuneArr[Math.floor(Math.random()*fortuneArr.length)];   // get the integer of random number between 0 and array length 
   return fortuneValue;
 }
 
 function tellFortune(fortuneNumKids,fortunePartnerNames,fortuneLocations,fortuneJobTitles) {
-  let NumKids=selectRandomly(fortuneNumKids);
-  let partnerName=selectRandomly(fortunePartnerNames);
-  let location=selectRandomly(fortuneLocations);
-  let jobTitle=selectRandomly(fortuneJobTitles);
+  const numKids =selectRandomly(fortuneNumKids);
+  const partnerName=selectRandomly(fortunePartnerNames);
+  const location=selectRandomly(fortuneLocations);
+  const jobTitle=selectRandomly(fortuneJobTitles);
 
   return `You will be a ${jobTitle} in ${location}, 
-  married to ${partnerName} with ${NumKids} kids.`;
+  married to ${partnerName} with ${numKids} kids.`;
 }
 
 console.log(tellFortune(numKids, partnerNames, locations, jobTitles));

@@ -17,21 +17,21 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 
 // ! Function under test
-function addToShoppingCart(ShopingCardList,groceryItem) {
+function addToShoppingCart(shoppingCardList,groceryItem) {
   
-  let newShopingCardList = [...ShopingCardList];   // adding the whole array elements by spread operator
+  const newShoppingCardList = [...shoppingCardList];   // adding the whole array elements by spread operator
 
-    if(newShopingCardList.length>=3)
+    if(newShoppingCardList.length>=3)
     {
-      newShopingCardList.shift();
-      newShopingCardList.push(groceryItem);
+      newShoppingCardList.shift();
+      newShoppingCardList.push(groceryItem);
       
     }
     else{
-      newShopingCardList.push(groceryItem);
+      newShoppingCardList.push(groceryItem);
       
     }
-    return newShopingCardList;
+    return newShoppingCardList;
   }
 
 
