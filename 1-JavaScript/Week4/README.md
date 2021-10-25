@@ -58,7 +58,7 @@ Expected output from a successful unit test:
 
 ```console
  PASS  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
-  ✓ doubleEvenNumbers should take the even numbers and double them (2 ms)
+  ✓ doubleEvenNumbers should take the even numbers and double them (2 ms)ls
 
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
