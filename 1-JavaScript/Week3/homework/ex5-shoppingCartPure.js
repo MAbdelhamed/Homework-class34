@@ -24,13 +24,9 @@ function addToShoppingCart(shoppingCardList,groceryItem) {
     if(newShoppingCardList.length>=3)
     {
       newShoppingCardList.shift();
-      newShoppingCardList.push(groceryItem);
       
     }
-    else{
-      newShoppingCardList.push(groceryItem);
-      
-    }
+    newShoppingCardList.push(groceryItem);
     return newShoppingCardList;
   }
 

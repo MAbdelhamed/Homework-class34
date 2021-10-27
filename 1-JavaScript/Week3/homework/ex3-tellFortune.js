@@ -45,11 +45,11 @@ function selectRandomly(fortuneArr) {
   return fortuneValue;
 }
 
-function tellFortune(fortuneNumKids,fortunePartnerNames,fortuneLocations,fortuneJobTitles) {
-  const numKids =selectRandomly(fortuneNumKids);
-  const partnerName=selectRandomly(fortunePartnerNames);
-  const location=selectRandomly(fortuneLocations);
-  const jobTitle=selectRandomly(fortuneJobTitles);
+function tellFortune(numberOfKids,partnerNames,locations,jobTitles) {
+  const numKids =selectRandomly(numberOfKids);
+  const partnerName=selectRandomly(partnerNames);
+  const location=selectRandomly(locations);
+  const jobTitle=selectRandomly(jobTitles);
 
   return `You will be a ${jobTitle} in ${location}, 
   married to ${partnerName} with ${numKids} kids.`;

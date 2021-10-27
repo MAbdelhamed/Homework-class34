@@ -30,14 +30,10 @@ function addToShoppingCart(groceryItem) {
     if(shoppingCart.length>=3)      //checking array length if it is more than or equal 3
     {
       shoppingCart.shift();       // remove first element of array
-      shoppingCart.push(groceryItem);    // add element to the end of array
-      shoppingCartItems=shoppingCart.join(', ');   //put ', ' separator between array elements
-    }
-    else{
-      shoppingCart.push(groceryItem);
-      shoppingCartItems=shoppingCart.join(', ');   
       
     }
+    shoppingCart.push(groceryItem);
+    shoppingCartItems=shoppingCart.join(', ');   
     return`You bought ${shoppingCartItems}!`;
   }
   else{

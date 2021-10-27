@@ -21,22 +21,23 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  "beers":1.75,
-  "chips":0.99,
-  "cola":.45,
-  "cookie":1.01,
-  "snacks":3.55
-
+  beers:1.75,
+  chips:0.99,
+  cola:.45,
+  cookie:1.01,
+  snacks:3.55,
 };
 
 function calculateTotalPrice(shoppingCartForParty) {
   let totalPrice=0;
   
+  
 
-  for (const groceryItem of shoppingCartForParty) {
-    totalPrice+=parseFloat(shoppingCartForParty[groceryItem]);
+  
+  
+  for (const groceryItem in shoppingCartForParty) {
+      totalPrice += shoppingCartForParty[groceryItem];
   }
-  console.log(totalPrice);
   return `Total: € ${totalPrice}`;
 }
 
@@ -51,7 +52,8 @@ function test1() {
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  console.assert(typeof(calculateTotalPrice(cartForParty))==="string") ;
+  const result =calculateTotalPrice(cartForParty);
+  console.assert(typeof(result)==="string") ;
 }
 
 function test() {

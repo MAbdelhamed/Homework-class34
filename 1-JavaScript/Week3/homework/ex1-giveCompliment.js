@@ -20,9 +20,18 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-Java
 -----------------------------------------------------------------------------*/
 function giveCompliment(name) {
   
-  const compliments = ["like sunshine on a rainy day","a candle in the darkness","a great listener","a gift to those around you","perfect just the way you are","inspiring","making a difference","a great example to others","awesome","wonderful"];
-  const compliment = compliments[Math.floor(Math.random()*compliments.length)];   //get the integer of random number between 0 and array length 
-  return `You are ${compliment}, ${name} `;
+  const compliments = [
+                        "like sunshine on a rainy day",
+                        "a candle in the darkness",
+                        "a great listener",
+                        "a gift to those around you",
+                        "perfect just the way you are",
+                        "inspiring","making a difference",
+                        "a great example to others",
+                        "awesome","wonderful"
+                      ];
+  const randomCompliment = compliments[Math.floor(Math.random()*compliments.length)];   //get the integer of random number between 0 and array length 
+  return `You are ${randomCompliment}, ${name} `;
 
 }
 
