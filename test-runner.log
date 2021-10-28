@@ -1,0 +1,443 @@
+2021-10-23 05:54:20 info: ------------------------------------------------------
+2021-10-23 05:54:20 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2021-10-23 05:54:20 info: ------------------------------------------------------
+2021-10-23 05:54:20 error: Something went wrong: ENOTDIR: not a directory, lstat '/Users/hackyourfuture/Desktop/HackYourHomework/Homework-class34/1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js/ex1-doubleEvenNumbers.test.js'
+2021-10-23 05:54:47 info: ------------------------------------------------------
+2021-10-23 05:54:47 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2021-10-23 05:54:47 info: ------------------------------------------------------
+2021-10-23 05:54:47 error: Something went wrong: ENOTDIR: not a directory, lstat '/Users/hackyourfuture/Desktop/HackYourHomework/Homework-class34/1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js/ex1-doubleEvenNumbers.test.js'
+2021-10-23 05:55:43 info: ------------------------------------------------------
+2021-10-23 05:55:43 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2021-10-23 05:55:43 info: ------------------------------------------------------
+2021-10-23 05:55:43 error: Something went wrong: Unit test file not found: /Users/hackyourfuture/Desktop/HackYourHomework/Homework-class34/1-JavaScript/Week4/ex1-doubleEvenNumbers.test.js/ex1-doubleEvenNumbers.test.js
+2021-10-23 05:56:22 info: ----------------------------------------------
+2021-10-23 05:56:22 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-10-23 05:56:22 info: ----------------------------------------------
+2021-10-23 05:56:24 error: *** Unit Test Error Report ***
+
+- giveCompliment should exist and be executable
+- giveCompliment should have all TODO comments removed
+- giveCompliment should take a single parameter
+- giveCompliment should include a `compliments` array initialized with 10 strings
+- giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+2021-10-23 05:56:26 error: *** Spell Checker Report ***
+
+
+2021-10-23 05:57:38 info: ----------------------------------------------
+2021-10-23 05:57:38 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-10-23 05:57:38 info: ----------------------------------------------
+2021-10-23 05:57:40 error: *** Unit Test Error Report ***
+
+- giveCompliment should have all TODO comments removed
+- giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+2021-10-23 05:57:41 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  24:7  warning  'compliment' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-10-23 05:58:45 info: Disclaimer turned off
+2021-10-23 06:00:24 info: ----------------------------------------------
+2021-10-23 06:00:24 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-10-23 06:00:24 info: ----------------------------------------------
+2021-10-23 06:00:26 error: *** Unit Test Error Report ***
+
+- giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+2021-10-23 06:01:14 info: ----------------------------------------
+2021-10-23 06:01:14 info: >>> Running Unit Test `ex2-dogYears` <<<
+2021-10-23 06:01:14 info: ----------------------------------------
+2021-10-23 06:01:16 info: All unit tests passed.
+2021-10-23 06:01:17 error: *** ESLint Report ***
+
+ex2-dogYears.js
+  20:7  warning  'doggieAge' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-10-23 06:01:43 info: ----------------------------------------
+2021-10-23 06:01:43 info: >>> Running Unit Test `ex2-dogYears` <<<
+2021-10-23 06:01:43 info: ----------------------------------------
+2021-10-23 06:01:44 info: All unit tests passed.
+2021-10-23 06:01:45 error: *** ESLint Report ***
+
+ex2-dogYears.js
+  20:7  warning  'doggieAge' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-10-23 06:02:05 info: ----------------------------------------
+2021-10-23 06:02:05 info: >>> Running Unit Test `ex2-dogYears` <<<
+2021-10-23 06:02:05 info: ----------------------------------------
+2021-10-23 06:02:07 info: All unit tests passed.
+2021-10-23 06:02:09 info: All steps were completed successfully
+2021-10-23 06:02:34 info: -------------------------------------------
+2021-10-23 06:02:34 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-10-23 06:02:34 info: -------------------------------------------
+2021-10-23 06:02:36 error: *** Unit Test Error Report ***
+
+- tellFortune should tell the fortune by randomly selecting array values
+
+2021-10-23 06:02:37 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  44:7  warning  'fortuneValue' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  49:7  warning  Identifier 'NumKids' is not in camelCase                 hyf/camelcase
+  49:7  warning  'NumKids' is never reassigned. Use 'const' instead       no-autofix/prefer-const
+  50:7  warning  'partnerName' is never reassigned. Use 'const' instead   no-autofix/prefer-const
+  51:7  warning  'location' is never reassigned. Use 'const' instead      no-autofix/prefer-const
+  52:7  warning  'jobTitle' is never reassigned. Use 'const' instead      no-autofix/prefer-const
+
+✖ 6 problems (0 errors, 6 warnings)
+
+
+2021-10-23 06:02:38 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:35:32 - Unknown word (Anglica)
+ex3-tellFortune.js:35:42 - Unknown word (Sherly)
+ex3-tellFortune.js:37:21 - Unknown word (Winterswijk)
+ex3-tellFortune.js:37:66 - Unknown word (Ermelo)
+
+2021-10-23 06:03:28 info: -------------------------------------------
+2021-10-23 06:03:28 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-10-23 06:03:28 info: -------------------------------------------
+2021-10-23 06:03:29 error: *** Unit Test Error Report ***
+
+- tellFortune should tell the fortune by randomly selecting array values
+
+2021-10-23 06:03:30 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  49:9  warning  Identifier 'NumKids' is not in camelCase  hyf/camelcase
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-10-23 06:03:32 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:35:32 - Unknown word (Anglica)
+ex3-tellFortune.js:35:42 - Unknown word (Sherly)
+ex3-tellFortune.js:37:21 - Unknown word (Winterswijk)
+ex3-tellFortune.js:37:66 - Unknown word (Ermelo)
+
+2021-10-23 06:06:56 info: -------------------------------------------
+2021-10-23 06:06:56 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-10-23 06:06:56 info: -------------------------------------------
+2021-10-23 06:06:57 error: *** Unit Test Error Report ***
+
+- tellFortune should tell the fortune by randomly selecting array values
+
+2021-10-23 06:08:02 info: --------------------------------------------
+2021-10-23 06:08:03 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-10-23 06:08:03 info: --------------------------------------------
+2021-10-23 06:08:03 warn: A unit test file was not provided.
+2021-10-23 06:08:05 info: All steps were completed successfully
+2021-10-23 06:08:25 info: ------------------------------------------------
+2021-10-23 06:08:25 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2021-10-23 06:08:25 info: ------------------------------------------------
+2021-10-23 06:08:25 warn: A unit test file was not provided.
+2021-10-23 06:08:26 error: *** ESLint Report ***
+
+ex5-shoppingCartPure.js
+  20:28  warning  Identifier 'ShopingCardList' is not in camelCase               hyf/camelcase
+  22:7   warning  'newShopingCardList' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2021-10-23 06:08:27 error: *** Spell Checker Report ***
+
+ex5-shoppingCartPure.js:20:28 - Unknown word (Shoping)
+ex5-shoppingCartPure.js:22:10 - Unknown word (Shoping)
+ex5-shoppingCartPure.js:22:32 - Unknown word (Shoping)
+ex5-shoppingCartPure.js:24:11 - Unknown word (Shoping)
+
+2021-10-23 06:11:18 info: ------------------------------------------------
+2021-10-23 06:11:18 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2021-10-23 06:11:18 info: ------------------------------------------------
+2021-10-23 06:11:18 warn: A unit test file was not provided.
+2021-10-23 06:11:20 error: *** Spell Checker Report ***
+
+ex5-shoppingCartPure.js:20:28 - Unknown word (shoping)
+ex5-shoppingCartPure.js:22:35 - Unknown word (shoping)
+
+2021-10-23 06:11:54 info: ------------------------------------------------
+2021-10-23 06:11:54 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2021-10-23 06:11:54 info: ------------------------------------------------
+2021-10-23 06:11:54 warn: A unit test file was not provided.
+2021-10-23 06:11:56 info: All steps were completed successfully
+2021-10-23 06:12:22 info: -----------------------------------------
+2021-10-23 06:12:22 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-10-23 06:12:22 info: -----------------------------------------
+2021-10-23 06:12:22 warn: A unit test file was not provided.
+2021-10-23 06:12:23 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  34:3  warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-10-23 06:12:24 error: *** Spell Checker Report ***
+
+ex6-totalCost.js:32:30 - Unknown word (shoping)
+ex6-totalCost.js:34:29 - Unknown word (shoping)
+ex6-totalCost.js:35:28 - Unknown word (shoping)
+
+2021-10-23 06:14:44 info: -----------------------------------------
+2021-10-23 06:14:44 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-10-23 06:14:44 info: -----------------------------------------
+2021-10-23 06:14:44 warn: A unit test file was not provided.
+2021-10-23 06:14:47 info: All steps were completed successfully
+2021-10-23 06:15:03 info: -------------------------------------------
+2021-10-23 06:15:03 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2021-10-23 06:15:03 info: -------------------------------------------
+2021-10-23 06:15:03 warn: A unit test file was not provided.
+2021-10-23 06:15:04 error: *** ESLint Report ***
+
+ex7-mindPrivacy.js
+  34:7  warning  'nonPrivateEmployeeRecords' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-10-23 06:15:33 info: -------------------------------------------
+2021-10-23 06:15:33 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2021-10-23 06:15:33 info: -------------------------------------------
+2021-10-23 06:15:33 warn: A unit test file was not provided.
+2021-10-23 06:15:36 info: All steps were completed successfully
+2021-10-23 06:27:15 info: ------------------------------------------------------
+2021-10-23 06:27:15 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2021-10-23 06:27:15 info: ------------------------------------------------------
+2021-10-23 06:27:15 info: Exercise has not yet been modified
+2021-10-23 06:27:17 info: All unit tests passed.
+2021-10-23 06:27:20 info: All steps were completed successfully
+2021-10-23 06:57:31 info: -------------------------------------------------
+2021-10-23 06:57:31 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-10-23 06:57:31 info: -------------------------------------------------
+2021-10-23 06:57:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: /Users/hackyourfuture/Desktop/HackYourHomework/Homework-class34/1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js: Missing semicolon. (56:24)
+
+      54 |   });
+      55 | });
+    > 56 | eslint-disable-next-line no-undef
+         |                         ^
+      57 |
+
+      at Parser._raise (node_modules/@babel/parser/src/parser/error.js:147:45)
+      at Parser.raiseWithData (node_modules/@babel/parser/src/parser/error.js:142:17)
+      at Parser.raise (node_modules/@babel/parser/src/parser/error.js:91:17)
+      at Parser.semicolon (node_modules/@babel/parser/src/parser/util.js:143:10)
+      at Parser.parseExpressionStatement (node_modules/@babel/parser/src/parser/statement.js:904:10)
+      at Parser.parseStatementContent (node_modules/@babel/parser/src/parser/statement.js:388:19)
+      at Parser.parseStatement (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseBlockOrModuleBlockBody (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockBody (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseProgram (node_modules/@babel/parser/src/parser/statement.js:130:10)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.615 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+
+2021-10-23 06:57:34 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  56:26  error  Parsing error: Unexpected token no
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2021-10-23 06:58:12 info: -------------------------------------------------
+2021-10-23 06:58:12 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-10-23 06:58:12 info: -------------------------------------------------
+2021-10-23 06:58:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (4 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      51 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      52 |     const expected = '€187.50';
+    > 53 |     expect(result).toBe(expected);
+         |                    ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:53:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.562 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+
+2021-10-23 06:58:15 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  37:37  error    'index' is defined but never used     no-unused-vars
+  37:43  warning  Identifier 'Arr' is not in camelCase  hyf/camelcase
+  37:43  error    'Arr' is defined but never used       no-unused-vars
+
+✖ 3 problems (2 errors, 1 warning)
+
+
+2021-10-23 06:59:05 info: -------------------------------------------------
+2021-10-23 06:59:05 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-10-23 06:59:05 info: -------------------------------------------------
+2021-10-23 06:59:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (3 ms)
+    ✕ should compute the earnings as a formatted Euro amount (3 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      51 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      52 |     const expected = '€187.50';
+    > 53 |     expect(result).toBe(expected);
+         |                    ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:53:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.552 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+
+2021-10-23 07:07:03 info: -------------------------------------------------
+2021-10-23 07:07:03 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-10-23 07:07:03 info: -------------------------------------------------
+2021-10-23 07:07:05 info: All unit tests passed.
+2021-10-23 07:07:07 info: All steps were completed successfully
+2021-10-25 12:53:19 info: -------------------------------------------------
+2021-10-25 12:53:19 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2021-10-25 12:53:19 info: -------------------------------------------------
+2021-10-25 12:53:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✓ should not modify the original `fruitBasket` array
+    ✕ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    TypeError: updatedFruitBasket.include is not a function
+
+      46 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      47 |     const updatedFruitBasket=sanitizeFruitBasket(fruitBasket,"lemon");
+    > 48 |     expect(updatedFruitBasket.include("lemon")).toBe(false);
+         |                               ^
+      49 |   });
+      50 | });
+      51 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:48:31)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.61 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+
+2021-10-25 12:56:11 info: -------------------------------------------------
+2021-10-25 12:56:11 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2021-10-25 12:56:11 info: -------------------------------------------------
+2021-10-25 12:56:12 info: All unit tests passed.
+2021-10-25 12:56:15 info: All steps were completed successfully
+2021-10-25 12:59:10 info: -------------------------------------------------
+2021-10-25 12:59:10 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2021-10-25 12:59:10 info: -------------------------------------------------
+2021-10-25 12:59:11 info: All unit tests passed.
+2021-10-25 12:59:14 info: All steps were completed successfully
+2021-10-25 01:21:02 info: ------------------------------------------
+2021-10-25 01:21:02 info: >>> Running Unit Test `ex4-observable` <<<
+2021-10-25 01:21:02 info: ------------------------------------------
+2021-10-25 01:21:04 info: All unit tests passed.
+2021-10-25 01:21:06 info: All steps were completed successfully
+2021-10-25 01:24:26 info: ------------------------------------------
+2021-10-25 01:24:26 info: >>> Running Unit Test `ex4-observable` <<<
+2021-10-25 01:24:26 info: ------------------------------------------
+2021-10-25 01:24:27 info: All unit tests passed.
+2021-10-25 01:24:30 info: All steps were completed successfully
+2021-10-25 01:53:33 info: --------------------------------------
+2021-10-25 01:53:33 info: >>> Running Unit Test `ex5-wallet` <<<
+2021-10-25 01:53:33 info: --------------------------------------
+2021-10-25 01:53:35 error: *** Unit Test Error Report ***
+
+- wallet q4: What is displayed in the console?
+
+2021-10-25 02:03:05 info: --------------------------------------
+2021-10-25 02:03:05 info: >>> Running Unit Test `ex5-wallet` <<<
+2021-10-25 02:03:05 info: --------------------------------------
+2021-10-25 02:03:06 info: All unit tests passed.
+2021-10-25 02:03:09 info: All steps were completed successfully
+2021-10-25 02:09:43 info: ------------------------------------------------------
+2021-10-25 02:09:43 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2021-10-25 02:09:43 info: ------------------------------------------------------
+2021-10-25 02:09:45 info: All unit tests passed.
+2021-10-25 02:09:47 info: All steps were completed successfully
+2021-10-27 09:46:52 info: -----------------------------------------
+2021-10-27 09:46:52 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-10-27 09:46:52 info: -----------------------------------------
+2021-10-27 09:46:52 warn: A unit test file was not provided.
+2021-10-27 09:46:53 error: *** Spell Checker Report ***
+
+

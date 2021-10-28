@@ -1,0 +1,40 @@
+{
+  "node": "v16.11.1",
+  "system": {
+    "manufacturer": "Apple Inc.",
+    "model": "MacBookPro10,1"
+  },
+  "cpu": {
+    "manufacturer": "Intel®",
+    "brand": "Core™ i7-3840QM",
+    "speed": 2.8
+  },
+  "memory": "16 GB",
+  "osInfo": {
+    "platform": "darwin",
+    "distro": "Mac OS X",
+    "release": "10.14.6"
+  },
+  "vscodeInfo": {
+    "version": "1.61.2",
+    "extensions": [
+      "christian-kohler.path-intellisense",
+      "CoenraadS.bracket-pair-colorizer",
+      "dbaeumer.vscode-eslint",
+      "EditorConfig.EditorConfig",
+      "esbenp.prettier-vscode",
+      "oderwat.indent-rainbow",
+      "PKief.material-icon-theme",
+      "ritwickdey.LiveServer",
+      "streetsidesoftware.code-spell-checker"
+    ],
+    "userSettings": {
+      "liveServer.settings.donotShowInfoMsg": true,
+      "workbench.iconTheme": "material-icon-theme",
+      "security.workspace.trust.untrustedFiles": "open",
+      "editor.bracketPairColorization.enabled": true,
+      "editor.guides.bracketPairs": true,
+      "editor.formatOnSave": true
+    }
+  }
+}

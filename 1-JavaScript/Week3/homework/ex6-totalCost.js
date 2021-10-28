@@ -30,11 +30,7 @@ const cartForParty = {
 
 function calculateTotalPrice(shoppingCartForParty) {
   let totalPrice=0;
-  
-  
-
-  
-  
+  // eslint-disable-next-line no-restricted-syntax
   for (const groceryItem in shoppingCartForParty) {
       totalPrice += shoppingCartForParty[groceryItem];
   }
@@ -53,9 +49,8 @@ function test1() {
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
   const result =calculateTotalPrice(cartForParty);
-  console.assert(typeof(result)==="string") ;
+  console.assert(result)==="Total: € 7.75";
 }
-
 function test() {
   test1();
   test2();
