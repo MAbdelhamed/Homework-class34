@@ -30,13 +30,12 @@ const mondayTasks = [{
 
 const hourlyRate = 25;
 
-function calculateTimeInHours(timeInMins) {
-    return timeInMins / 60;
-}
+
 
 function computeEarnings(mondayTasks, hourlyRate) {
-    const totalEarnings = mondayTasks.map(task => calculateTimeInHours(task.duration) * hourlyRate).reduce((acc, current) => acc + current);
-    return `€${parseFloat(totalEarnings).toFixed(2)}`;
+    const mondayTasksWithHours= mondayTasks.map(task=>task.duration/60);
+    const totalEarnings = mondayTasksWithHours.map(task => task* hourlyRate).reduce((acc, current) => acc + current);
+    return `€${parseFloat(totalEarnings).toFixed(2)}`; 
 }
 
 // ! Unit tests (using Jest)
