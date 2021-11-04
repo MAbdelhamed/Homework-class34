@@ -38,10 +38,61 @@ const myBooks = [
   },
 ];
 
-function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+function setBookCover(bookTitle) {
+  if (bookTitle === 'The Design of Everyday Things')
+    return "assets/the_design_of_everyday_things.jpg";
+  else if (bookTitle === 'The Most Human Human')
+    return "assets/the_most_human_human.jpg";
+  else
+    return "assets/the_pragmatic_programmer.jpg";
 }
 
+function bookCoverStyle(bookCover) {
+  bookCover.style.margin = "1rem";
+  bookCover.style.width = "65%";
+  bookCover.style.height = "80%";
+  bookCover.alt = "book Cover";
+}
+
+
+function createBookList(books) {
+  // TODO your code goes in here, return the ul element
+
+  const bookList = document.createElement("ul");
+  console.log(books);
+
+  for (const book of books) {
+    const bookItem = document.createElement("li");
+    let bookDescription = document.createElement("p");
+    const bookCover = document.createElement("img");
+    if (book.alreadyRead) {
+      bookDescription = document.createTextNode(`${book.title} - ${book.author}`);
+      bookCover.src = setBookCover(book.title);
+      bookCoverStyle(bookCover);
+      bookItem.appendChild(bookDescription);
+      bookItem.appendChild(bookCover);
+      bookItem.style.backgroundColor = "green";
+
+    }
+    else {
+      bookDescription=document.createTextNode(`${book.title} - ${book.author}`);
+      bookCover.src=setBookCover(book.title);
+      bookCoverStyle(bookCover);
+      bookItem.appendChild(bookDescription);
+      bookItem.appendChild(bookCover);
+      bookItem.style.backgroundColor = "red";
+
+    }
+    bookItem.style.margin="1rem"
+    bookList.style.listStyleType = "none";
+    bookList.style.display = "flex";
+
+    bookList.appendChild(bookItem);
+  }
+
+  return bookList;
+}
+console.log(createBookList(myBooks));
 const ulElement = createBookList(myBooks);
 
 document.querySelector('#bookList').appendChild(ulElement);

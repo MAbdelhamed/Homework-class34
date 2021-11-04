@@ -11,3 +11,26 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 
 // TODO add your JavaScript code here.
+//change the body tag's style
+document.body.style.fontFamily = "Arial, sans-serif";
+
+
+const infoSpans = document.getElementsByTagName("span");
+const infoList = document.getElementsByTagName("li");
+
+//replace each of the spans
+function addPersonalInfo(infoSpans) {
+   infoSpans[0].textContent = "Medo";
+   infoSpans[1].textContent = "fish";
+   infoSpans[2].textContent = "Winterswijk";
+}
+
+//add class to all the li
+function addClassToList(infoList) {
+   for (let i = 0; i < infoList.length; i++){
+      infoList[i].classList.add("list-item")
+   }
+}
+
+addPersonalInfo(infoSpans);
+addClassToList(infoList);

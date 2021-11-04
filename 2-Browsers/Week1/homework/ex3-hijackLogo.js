@@ -8,7 +8,19 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    HackYourFuture logo instead.
 ------------------------------------------------------------------------------*/
 function hijackGoogleLogo() {
-  // TODO your code goes in here
+  
+   const allImages = document.getElementsByTagName("img");
+
+   function checkImageAndReplace(allImages){
+      for (let i = 0; i < allImages.length; i++){
+         if (allImages[i].getAttribute("alt") === "Google") {
+            allImages[i].src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+            allImages[i].srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+         }
+      }
+   }
+
+   checkImageAndReplace(allImages);
 }
 
 hijackGoogleLogo();
