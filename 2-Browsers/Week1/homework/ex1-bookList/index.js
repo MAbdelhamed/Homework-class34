@@ -38,54 +38,42 @@ const myBooks = [
   },
 ];
 
-function setBookCover(bookTitle) {
-  if (bookTitle === 'The Design of Everyday Things')
-    return "assets/the_design_of_everyday_things.jpg";
-  else if (bookTitle === 'The Most Human Human')
-    return "assets/the_most_human_human.jpg";
-  else
-    return "assets/the_pragmatic_programmer.jpg";
+function setBookCover(bookIsbn) {
+  if (bookIsbn === '978-0465050659')
+    return 'assets/the_design_of_everyday_things.jpg';
+  else if (bookIsbn === '978-1617933431')
+    return 'assets/the_most_human_human.jpg';
+  else return 'assets/the_pragmatic_programmer.jpg';
 }
 
 function bookCoverStyle(bookCover) {
-  bookCover.style.margin = "1rem";
-  bookCover.style.width = "65%";
-  bookCover.style.height = "80%";
-  bookCover.alt = "book Cover";
+  bookCover.style.margin = '1rem';
+  bookCover.style.width = '65%';
+  bookCover.style.height = '80%';
+  bookCover.alt = 'book Cover';
 }
-
 
 function createBookList(books) {
   // TODO your code goes in here, return the ul element
-
-  const bookList = document.createElement("ul");
-  console.log(books);
-
+  const bookList = document.createElement('ul');
   for (const book of books) {
-    const bookItem = document.createElement("li");
-    let bookDescription = document.createElement("p");
-    const bookCover = document.createElement("img");
+    const bookItem = document.createElement('li');
+    let bookDescription = document.createElement('p');
+    const bookCover = document.createElement('img');
+    bookDescription.textContent = `${book.title} - ${book.author}`;
+    bookCover.src = setBookCover(book.isbn);
+    bookCoverStyle(bookCover);
+    bookItem.appendChild(bookDescription);
+    bookItem.appendChild(bookCover);
+
     if (book.alreadyRead) {
-      bookDescription = document.createTextNode(`${book.title} - ${book.author}`);
-      bookCover.src = setBookCover(book.title);
-      bookCoverStyle(bookCover);
-      bookItem.appendChild(bookDescription);
-      bookItem.appendChild(bookCover);
-      bookItem.style.backgroundColor = "green";
-
+      bookItem.style.backgroundColor = 'green';
+    } else {
+      bookItem.style.backgroundColor = 'red';
     }
-    else {
-      bookDescription=document.createTextNode(`${book.title} - ${book.author}`);
-      bookCover.src=setBookCover(book.title);
-      bookCoverStyle(bookCover);
-      bookItem.appendChild(bookDescription);
-      bookItem.appendChild(bookCover);
-      bookItem.style.backgroundColor = "red";
-
-    }
-    bookItem.style.margin="1rem"
-    bookList.style.listStyleType = "none";
-    bookList.style.display = "flex";
+    bookItem.style.margin = '1rem';
+    bookList.style.listStyleType = 'none';
+    bookList.style.display = 'flex';
 
     bookList.appendChild(bookItem);
   }
