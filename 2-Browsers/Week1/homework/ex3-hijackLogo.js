@@ -8,19 +8,12 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    HackYourFuture logo instead.
 ------------------------------------------------------------------------------*/
 function hijackGoogleLogo() {
-  
-   const allImages = document.getElementsByTagName("img");
-
-   function checkImageAndReplace(allImages){
-      for (let i = 0; i < allImages.length; i++){
-         if (allImages[i].getAttribute("alt") === "Google") {
-            allImages[i].src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
-            allImages[i].srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
-         }
-      }
-   }
-
-   checkImageAndReplace(allImages);
+  const allImages = document.getElementsByTagName('img');
+  for (const image of allImages) {
+    if (image.getAttribute('alt') === 'Google') {
+      image.src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+      image.srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+    }
+  }
 }
-
 hijackGoogleLogo();
