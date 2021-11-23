@@ -27,14 +27,27 @@ exercise file.
 const rollDice = require('../../helpers/pokerDiceRoller');
 
 function rollTheDices() {
-  // TODO Refactor this function
   const dices = [1, 2, 3, 4, 5];
-  return rollDice(1);
+
+  const promisesList = dices.map((dice) => {
+    return rollDice(dice);
+  });
+  return Promise.all(promisesList);
 }
 
 rollTheDices()
   .then((results) => console.log('Resolved!', results))
   .catch((error) => console.log('Rejected!', error.message));
-
 // ! Do not change or remove the code below
 module.exports = rollTheDices;
+
+
+/*
+You may also notice that, in the case of a rejected promise, dices that have not
+yet finished their roll continue to do so. 
+Q: Can you explain why? Please add your answer as a comment to the end of the 
+exercise file.
+
+A: Because we do not have return after the rejection in RollOnce function 
+
+*/
