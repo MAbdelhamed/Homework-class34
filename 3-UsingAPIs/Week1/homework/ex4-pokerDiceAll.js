@@ -48,6 +48,8 @@ yet finished their roll continue to do so.
 Q: Can you explain why? Please add your answer as a comment to the end of the 
 exercise file.
 
-A: Because we do not have return after the rejection in RollOnce function 
+A: Because  promise.all takes an array of promises and iterate  on them until it finished but 
+if any of the passed-in promises reject, Promise.all asynchronously rejects with
+ the value of the promise that rejected, whether or not the other promises have resolved
 
 */

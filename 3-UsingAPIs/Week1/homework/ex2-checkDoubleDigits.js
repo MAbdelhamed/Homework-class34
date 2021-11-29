@@ -14,12 +14,14 @@ Complete the function called `checkDoubleDigits` such that:
 ------------------------------------------------------------------------------*/
 function checkDoubleDigits(number) {
   return new Promise((resolve, reject) => {
-    if (number >= 10 && number <= 99) {
-      resolve('This is a double digit number!');
-      return;
+    if (typeof number === 'number') {
+      if (number >= 10 && number <= 99) {
+        resolve('This is a double digit number!');
+      } else {
+        reject(new Error(`Expected a double digit number but got ${number}`));
+      }
     } else {
-      reject(new Error(`Expected a double digit number but got ${number}`));
-      return;
+      reject(new Error(`Error it is not a number`));
     }
   });
 }

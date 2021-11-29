@@ -49,3 +49,8 @@ rollDice()
 
 // ! Do not change or remove the code below
 module.exports = rollDice;
+
+/*
+the problem solved because once the promise rejected you can not resolve after rejection 
+so you will not find success after failing 
+*/
