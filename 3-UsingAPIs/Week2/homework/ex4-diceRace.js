@@ -15,17 +15,32 @@ const rollDice = require('../../helpers/pokerDiceRoller');
 
 function rollTheDices() {
   const dices = [1, 2, 3, 4, 5];
-  // TODO complete this function; use Promise.race() and rollDice()
+  const promisesList = dices.map((dice) => {
+    return rollDice(dice);
+  });
+  return Promise.race(promisesList);
 }
 
-// Refactor this function to use async/await and try/catch
-function main() {
-  rollTheDices()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+  try {
+    const resolved = await rollTheDices();
+    console.log('resolved ====>', resolved);
+  } catch (error) {
+    console.log('Rejected ====>', error.message);
+  }
 }
 
 main();
 
 // ! Do not change or remove the code below
 module.exports = rollTheDices;
+
+/*
+you may observe that some dices continue rolling 
+   for some undetermined time after the promise returned by `Promise.race()` 
+   resolves. Do you know why?
+
+
+
+   because of promise.race it return a promise that resolved or rejected as soon as one of the promises in an iterable resolved or rejected
+*/
